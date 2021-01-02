@@ -77,7 +77,6 @@ header img {
 	background-size: cover;
 	background-position: top left;
 }
-
 .serv .section.text {
 	padding:0 1em 1em;
 }
@@ -99,6 +98,7 @@ form.order {
 }
 form.order p {
 	margin-top: 0;
+	text-align: center;
 }
 form.order .formfield {
 	margin-bottom: 1rem;
@@ -110,13 +110,13 @@ form.order input, form.order textarea, form.order button {
 	border-radius: 5px;
 	background-color: #fff;
 	font-size: 1em;
-	padding: 1rem;
+	padding: 0.5em;
 }
 form.order label {
 	display: block;
 }
 form.order input {
-	height: 42px;
+	min-height: 42px;
 }
 form.order input[type='file'] {
 	height: auto;
@@ -150,7 +150,6 @@ form.order button {
 	}
 	.formfield div:first-child {
 		text-align: right;
-		line-height: 1.0;
 		padding-right: 1em;
 	}
 }
@@ -172,9 +171,21 @@ form.order button {
 	body {
 		font-size: 1.5em;
 	}
+	.section {
+		padding: 2em 2em;
+	}
 	.section-image img {
 		width:130%;
 		object-position: -2vw;
+	}
+	.serv-text {
+		font-size: 1rem;
+		height: 100%;
+		display: flex;
+  		align-items: center;
+	}
+	.serv-text p {
+	    padding: 1em;
 	}
 	h1, h3 {
 		font-size: 2.65em;
@@ -182,6 +193,12 @@ form.order button {
 }
 
 @media (min-width: 1600px) {
+	h1 {
+		background: url(img/po-po_sign.svg) no-repeat calc(33.3333333% + 53px) 0;
+	}
+	.section {
+		padding: 2em 3em;
+	}
 	.section-image img {
 		width:100%;
 		object-position: 0;
