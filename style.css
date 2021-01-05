@@ -104,13 +104,23 @@ form.order .formfield {
 	margin-bottom: 1rem;
 	align-items: center;
 }
-form.order input, form.order textarea, form.order button {
+form.order input, form.order textarea, form.order button, .request-select {
 	width: 100%;
 	border:0;
 	border-radius: 5px;
 	background-color: #fff;
 	font-size: 1em;
 	padding: 0.5em;
+}
+.request-select {
+	display: block;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-image: url('img/arrow.svg');
+	background-repeat: no-repeat;
+	background-position: right .7em top 50%;
+	background-size: .65em auto;
 }
 form.order label {
 	display: block;
@@ -122,6 +132,9 @@ form.order input[type='file'] {
 	height: auto;
 	padding: 0;
 	background: transparent;
+}
+form.order textarea {
+	line-height: 1.25;
 }
 form.order button {
 	background: #000;
@@ -205,5 +218,8 @@ form.order button {
 	}
 	body {
 		font-size: 1.75em;
+	}
+	form.order :not(p) :not(h3) {
+		font-size: 1.5rem;
 	}
 }
