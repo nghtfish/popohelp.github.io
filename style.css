@@ -141,6 +141,9 @@ form.order button {
 	font-weight: 600;
 	color: #fff;
 }
+form.order :not(p) :not(h3) {
+	font-size: 1.5rem;
+}
 
 @media (min-width: 568px) {
 	body {
@@ -218,8 +221,5 @@ form.order button {
 	}
 	body {
 		font-size: 1.75em;
-	}
-	form.order :not(p) :not(h3) {
-		font-size: 1rem;
 	}
 }
