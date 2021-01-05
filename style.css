@@ -220,6 +220,6 @@ form.order button {
 		font-size: 1.75em;
 	}
 	form.order :not(p) :not(h3) {
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 }
