@@ -23,7 +23,7 @@ h1, h3 {
 	padding: 1em;
 	text-align: center;
 	font-size: 1.5em;
-	line-height: 1.1;
+	line-height: 1.2;
 	font-weight: 700;
 }
 .yl {
@@ -125,7 +125,7 @@ header img {
 
 form.order {
 	width: 100%;
-	padding: 10px 16px 24px;
+	padding: 24px 16px;
 	background-color: #fcb940;
 }
 form.order p {
