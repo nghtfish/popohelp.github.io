@@ -68,6 +68,27 @@ header img {
 	text-align: center;
 	margin: 0 auto;
 }
+.section.ty {
+	text-align: left;
+}
+.ty ul {
+	padding: 0;
+}
+.ty li {
+	list-style: none;
+	display: flex;
+
+	margin: 0 0 16px 0;
+}
+.ty li::before{
+	content: '';
+	display: inline-block;
+	flex:  0 0 auto;
+	height: 35px;
+	width: 24px;
+	background: url(img/po-po_sign_full.svg) no-repeat;
+	margin-right: 16px;
+}
 .section p {
 	margin:0;
 }
