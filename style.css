@@ -1,0 +1,273 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+	color: #000;
+	font-size: 1em;
+}
+header {
+	background-color: #ffdcb4;
+	width: 100%;
+	height: 80px;
+}
+h1 {
+	background: url(img/po-po_sign.svg) no-repeat center;
+}
+h1, h3 {
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+	font-size: 2em;
+	line-height: 1.1;
+}
+h2 {
+	font-size: 1.5em;
+	line-height: 1.1;
+	margin: 0 auto 1em;
+}
+h2.slog {
+	margin: 0.75em auto 0;
+}
+.priv {
+	text-align: left;
+	padding: 1em 2em;
+}
+.priv h2 {
+	margin:1em 0;
+}
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+}
+header img {
+	height:80px;
+	margin:0 auto;
+	padding: 10px 0;
+}
+.pure-g [class*=pure-u] {
+	font-family: 'Montserrat', sans-serif !important;
+}
+.pure-g {
+	letter-spacing: 0;
+	font-family: 'Montserrat', sans-serif !important;
+	word-spacing: 0;
+}
+.splash {
+	background-color: #fcb940;
+}
+.serv {
+	background-color: #ffdcb4;
+}
+.reson {
+	background-color: #d8ecff;
+}
+.garantee {
+	background-color: #fff;
+}
+.section {
+	padding: 2em 1em;
+	text-align: center;
+	margin: 0 auto;
+}
+.section.ty {
+	text-align: left;
+}
+.ty ul {
+	padding: 0;
+}
+.ty li {
+	list-style: none;
+	display: flex;
+
+	margin: 0 0 16px 0;
+}
+.ty li::before{
+	content: '';
+	display: inline-block;
+	flex:  0 0 auto;
+	height: 35px;
+	width: 24px;
+	background: url(img/po-po_sign_full.svg) no-repeat;
+	margin-right: 16px;
+}
+.section p {
+	margin:0;
+}
+.section-image {
+	height: 80vw;
+	background: url(img/01.jpg) no-repeat;
+	background-size: cover;
+	background-position: top left;
+}
+.serv .section.text {
+	padding:0 1em 1em;
+}
+.serv-text {
+	background: url(img/blank.svg) no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	padding: 2em 1em;
+}
+.serv-text p {
+	border-top: 2px dashed #000;
+	border-bottom: 2px dashed #000;
+	padding: 1em;
+}
+form.order {
+	width: 100%;
+	padding: 10px 16px 24px;
+	background-color: #fcb940;
+}
+form.order p {
+	margin-top: 0;
+	text-align: center;
+}
+form.order .formfield {
+	margin-bottom: 1rem;
+	align-items: center;
+}
+form.order input, form.order textarea, form.order button, .request-select {
+	width: 100%;
+	border:0;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 1em;
+	padding: 0.5em;
+}
+.request-select {
+	display: block;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-image: url('img/arrow.svg');
+	background-repeat: no-repeat;
+	background-position: right .7em top 50%;
+	background-size: .65em auto;
+	min-height: 42px;
+}
+form.order label {
+	display: block;
+}
+form.order input {
+	min-height: 42px;
+}
+form.order input[type='file'] {
+	height: auto;
+	padding: 0;
+	background: transparent;
+}
+form.order textarea {
+	line-height: 1.25;
+}
+form.order button {
+	background: #000;
+	font-weight: 600;
+	color: #fff;
+	min-height: 42px;
+}
+form.order :not(p) :not(h3) {
+	font-size: 1rem;
+}
+#go-back {
+	text-align: center;
+	font-weight: 600;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.copy {
+	font-size: 1rem;
+	text-align: center;
+}
+.copy a, .copy a:link, .copy a:visited, .copy a:active, .copy a:hover {
+	color:#000;
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+}
+.copy a:hover {
+	border-bottom: 3px solid #fcb940;
+}
+
+@media (min-width: 568px) {
+	body {
+		font-size: 1.25em;
+	}
+	header {
+		height: 120px;
+	}
+	header img {
+		height:120px;
+		margin:0 2em;
+		padding: 20px 0;
+	}
+}
+/* pure-u-md-1-2 */
+@media (min-width: 768px) {
+	.section-image {
+		height: auto;
+		background-position: left -50px top;
+	}
+	.formfield div:first-child {
+		text-align: right;
+		padding-right: 1em;
+	}
+}
+/* pure-u-lg- */
+@media (min-width: 1024px) {
+	h1 {
+		background: url(img/po-po_sign.svg) no-repeat calc(40% + 37px) 0;
+	}
+	.section-image {
+		height: auto;
+		background-position: left top;
+	}
+}
+/* .pure-u-xl- */
+@media (min-width: 1280px) {
+	h1 {
+		background: url(img/po-po_sign.svg) no-repeat calc(33.3333333% + 46px) 0;
+	}
+	body {
+		font-size: 1.5em;
+	}
+	.section {
+		padding: 2em 2em;
+	}
+	.section-image img {
+		width:130%;
+		object-position: -2vw;
+	}
+	.serv-text {
+		font-size: 1rem;
+		height: 100%;
+		display: flex;
+  		align-items: center;
+	}
+	.serv-text p {
+	    padding: 1em;
+	}
+	h1, h3 {
+		font-size: 2.65em;
+	}
+}
+
+@media (min-width: 1600px) {
+	h1 {
+		background: url(img/po-po_sign.svg) no-repeat calc(33.3333333% + 53px) 0;
+	}
+	.section {
+		padding: 2em 3em;
+	}
+	.section-image img {
+		width:100%;
+		object-position: 0;
+	}
+	body {
+		font-size: 1.75em;
+	}
+}

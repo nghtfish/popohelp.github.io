@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/base-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="style.css">
+	<!-- anti-flicker snippet (recommended)  -->
+		<style>.async-hide { opacity: 0 !important} </style>
+		<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+		h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+		(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+		})(window,document.documentElement,'async-hide','dataLayer',4000,
+		{'GTM-5435QNW':true});</script>
+	<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5435QNW');</script>
+	<!-- End Google Tag Manager -->
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5435QNW"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<header>
+		<img src="img/po-po_logo.svg" alt="">
+	</header>
+	<main>
+		<h1>Спасибо за&nbsp;заполнение формы на&nbsp;возврат средств за международное отправление Укрпочты</h1>
+		<div class="pure-g splash">
+			<div class="pure-u-1 section ty">
+				<h2>
+					Наши шаги следующие:
+				</h2>
+				<ul>
+					<li><span>Подаем заявление на розыск в&nbsp;Укрпочте</span></li>
+					<li><span>Примерно через 2&nbsp;недели получаем ответ, что заявление приняли к&nbsp;рассмотрению от сотрудника Укрпочты</span></li>
+					<li><span>В течение 2&ndash;4 недель Укрпочта ищет посылку и&nbsp;пытается понять, что с&nbsp;ней. Если отправление доставлено или найдено, то компенсация начислена не будет, но если подтверждается потеря, то получаем сообщение, что принято решение начислить компенсацию</span></li>
+					<li><span>В течение 1&ndash;3 недели ожидаем начисление компенсации</span></li>
+				</ul>
+				<p id="go-back">Вернуться</p>
+			</div>
+		</div>
+	</main>
+<script>
+	document.getElementById('go-back').addEventListener('click', () => {
+		history.back();
+	});
+</script>
+</body>
+</html>
